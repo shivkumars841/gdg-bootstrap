@@ -1,13 +1,14 @@
 var Config = (function(){
     var config = {
-        //modify these
-        'name'          : _CHAPTER_NAME_,
-        'id'            : _CHAPTER_ID_,
-        'google_api'    : _API_KEY_,
-        'pwa_id'        : _PICASA_ALBUM_ID, //picasa web album id
+		//modify these
+		        'name'          : _CHAPTER_NAME_,
+		        'id'            : _CHAPTER_ID_,
+		        'google_api'    : _API_KEY_,
+		        'pwa_id'        : _PICASA_ALBUM_ID, //picasa web album id
         //custom stuff
         'cover_photo'   : true, //best results make sure you have 940x180 image
         'cover_color'   : '#ffffff',
+		'theme'			: 'gdg.css', // also available: devgoogle.css
         'custom_albums' : {
                             events : {
                                 //'ahNzfmdvb2dsZS1kZXZlbG9wZXJzcg4LEgVFdmVudBib8PsDDA':'5738801490307387457'
@@ -20,6 +21,7 @@ var Config = (function(){
 /**************/
 //INIT
 $(document).ready(function() {
+	$('head').append('<link href="css/'+Config.get('theme')+'" rel="stylesheet"/>');
     changePanel();
     $('#about_sec').show();
     $('#about_nav').addClass('active');
