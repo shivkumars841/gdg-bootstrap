@@ -1,4 +1,4 @@
-GDG Bootstrap v0.05
+GDG Bootstrap v0.5.1
 http://developers.google.com/groups
 
 Created by +Joshua Woodward http://joshuawoodward.com/+
@@ -33,6 +33,11 @@ GDG Allhabad Changelog Revisions
 v 0.0
 Started with the base theme to build the site upon.
 --------------------------------------
+
+
+=======================================
+v 0.5.1
+In process of re-writing to AngularJS (http://angularjs.org)
 
 
 =======================================
